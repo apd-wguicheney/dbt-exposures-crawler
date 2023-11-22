@@ -58,7 +58,9 @@ $ python3 -m exposurescrawler.crawlers.tableau \
             --verbose
 ```
 
-Make sure you check the `.env.example` file to see which environment variables must be defined.
+Make sure you check to include file called `.env` in the main folder of your dbt projects with your Tableau connection information.
+For the time being, only the PAT token method will allow you to bypass Tableau's MFA and authenticate you.
+Check the .env.example file to see how to set that up.
 
 ## Project motivation
 
