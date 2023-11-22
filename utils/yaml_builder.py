@@ -16,7 +16,6 @@ def process_data(data):
     yaml_data_list = []
     exposures = data.get("exposures", {})  # Access the 'exposures' key
     for key, item in exposures.items():
-        print(f"Processing exposure key: {key}")  # Debug print
         transformed_item = {
             'name': item.get('name'),
             'label': item.get('package_name'),  # Adjust as needed
