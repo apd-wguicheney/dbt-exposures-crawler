@@ -14,6 +14,9 @@ are supported as a source.
 > Please reach out if you try this at your own organization. Feedback is very appreciated, and we
 > would love to hear if you had any issues setting this up at your own.
 
+## Fork
+This project was forked out of this repo: https://github.com/voi-oss/dbt-exposures-crawler/tree/ma
+
 ## Version compatibility
 
 This project requires Python 3.8+. The latest published version of this package has been tested internally (at Voi) with
