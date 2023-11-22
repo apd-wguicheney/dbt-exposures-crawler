@@ -1,0 +1,7 @@
+TABLEAU_URL=https://prod-useast-a.online.tableau.com # without a trailling slash
+TABLEAU_SITE=<site name>
+TABLEAU_USERNAME=<username>
+TABLEAU_PASSWORD=<password>
+TABLEAU_PAT_NAME=<pat name>
+TABLEAU_PAT_SECRET=<pat secret>
+TABLEAU_LOGIN_METHOD=personal_access_token
