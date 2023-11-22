@@ -15,6 +15,7 @@ from exposurescrawler.tableau.models import WorkbookModelsMapping
 from exposurescrawler.tableau.rest_client import TableauRestClient
 from exposurescrawler.utils.logger import logger
 from exposurescrawler.utils.query_parsing import search_model_in_query
+from exposurescrawler.utils.yaml_builder import create_yaml_output
 
 load_dotenv(".env", override=True)
 
@@ -146,6 +147,13 @@ def tableau_crawler(
     logger().info('')
     logger().info(f'💾 Writing results to file: {manifest_path}')
     manifest.save(manifest_path)
+
+    dir_path = os.path.dirname(manifest_path)
+    output_file_path = os.path.join(dir_path, 'exposure.yml')
+    logger().info('')
+    logger().info(f'💾 Writing results to yml file: {output_file_path}')
+    
+    create_yaml_output(manifest_path)
 
 
 @click.command()
