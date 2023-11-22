@@ -16,7 +16,7 @@ def search_model_in_query(query: str, models: Mapping[str, Any]) -> Dict[str, An
     query = query.lower().replace('"', '').replace("'", '')
 
     for model in models.keys():
-        if model in query:
+        if model.lower() in query:
             found[model] = models[model]
 
     return found
