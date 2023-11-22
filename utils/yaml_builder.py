@@ -50,5 +50,3 @@ def create_yaml_output(json_file_path):
         # Write YAML data to file
         with open(output_file_path, 'w') as file:
             file.write(yaml_data)
-
-        print(f"YAML data written to {output_file_path}")
